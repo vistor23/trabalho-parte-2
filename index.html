@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Prestações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Prestações - Sistema Price</h1>
+        <label for="valor">Valor do Empréstimo (R$):</label>
+        <input type="number" id="valor" required>
+
+        <label for="taxa">Taxa de Juros Mensal (%):</label>
+        <input type="number" id="taxa" required>
+
+        <label for="prestacoes">Número de Prestações:</label>
+        <input type="number" id="prestacoes" required>
+
+        <button onclick="calcularPrestacao()">Calcular</button>
+
+        <h2 id="resultado"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
